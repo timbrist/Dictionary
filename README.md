@@ -22,3 +22,6 @@ This is the page without authentification.
   
 This is the page of the dictionary.
 ![OUTPUT](https://github.com/timbrist/dictionary/blob/main/images/afterlogin.png)
+
+### ACKNOWLEDGEMENT
+The style is provide by @srcbr from [codepen](https://codepen.io/srcbr/pen/eYxYzRM)
