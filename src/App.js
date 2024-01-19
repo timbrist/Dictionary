@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navigation';
+import BasicSearch from './components/BasicSearch';
+import ImageSearch from './components/ImageSearch';
+import Account  from './components/Account';
+import WordList from './components/WordList';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import ProtectedRoute from "./components/ProtectedRoute";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <UserAuthContextProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+              <Route path="/home" element={
+                  <ProtectedRoute><Home /></ProtectedRoute>
+                }/>
+              <Route path="/search" element={
+                <ProtectedRoute><BasicSearch /></ProtectedRoute> 
+              } />
+              <Route path="/image" element={ 
+                <ProtectedRoute><ImageSearch /></ProtectedRoute>
+              } />
+              <Route path="/wordlist" element={
+                <ProtectedRoute><WordList /></ProtectedRoute>
+              }/>
+              <Route path="/account" element={
+              <ProtectedRoute><Account /></ProtectedRoute>
+              } />
+              <Route path="/" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+          </BrowserRouter>
+        </UserAuthContextProvider>
+
   );
-}
+};
 
 export default App;
