@@ -1,24 +1,24 @@
-# Dictionary
-A dictionary website using react js and firebase.  
+# 字典
+基于react，firebase的字典网页 
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/timbrist/Dictionary/README.md)
 
 [![中文](https://img.shields.io/badge/lang-中文-red.svg)](https://github.com/timbrist/Dictionary/blob/main/README.cn.md)
 
-### ABSTRACT
-Congratulations for finding this repository.
+### 摘要
+恭喜您发现这个宝藏仓库
 
 
-### USAGE
-To use the code you need to install node js(only tested in version 21.xx)
+### 安装方式
+先安装 node js(21.xx)
 1. `git clone https://github.com/timbrist/Dictionary.git`
 2. `cd Dictionary`
 3. `npm install`
 4. `npm start`
 
-### EXPECTATION  
-This is the page without authentification.
+### 结果  
+登录前
 ![INPUT](https://github.com/timbrist/Dictionary/blob/main/imgs/beforelogin.png)
   
-This is the page of the dictionary.
+登录后
 ![OUTPUT](https://github.com/timbrist/Dictionary/blob/main/imgs/afterlogin.png)
