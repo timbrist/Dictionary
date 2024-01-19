@@ -18,7 +18,7 @@
 
 ### 结果  
 登录前
-![INPUT](https://github.com/timbrist/dictionary/blob/main/images/beforelogin.png)
+![INPUT](https://github.com/timbrist/Dictionary/blob/main/images/beforelogin.png)
   
 登录后
-![OUTPUT](https://github.com/timbrist/dictionary/blob/main/images/afterlogin.png)
+![OUTPUT](https://github.com/timbrist/Dictionary/blob/main/images/afterlogin.png)
