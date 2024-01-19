@@ -18,7 +18,7 @@ To use the code you need to install node js(only tested in version 21.xx)
 
 ### EXPECTATION  
 This is the page without authentification.
-![INPUT](https://github.com/timbrist/Dictionary/blob/main/images/beforelogin.png)
+![INPUT](https://github.com/timbrist/dictionary/blob/main/images/beforelogin.png)
   
 This is the page of the dictionary.
-![OUTPUT](https://github.com/timbrist/Dictionary/blob/main/images/afterlogin.png)
+![OUTPUT](https://github.com/timbrist/dictionary/blob/main/images/afterlogin.png)
